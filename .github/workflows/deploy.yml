@@ -13,7 +13,7 @@ jobs:
       - name: install dependensies
         run: npm ci
   lint-test:
-    needs: Get Code
+    needs: check-out
     runs-on: ubuntu-latest
     steps:
       - name: lint
